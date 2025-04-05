@@ -20,7 +20,7 @@ body::before{
     height: 100%;
     position: absolute;
     top: 0;
-    left: 400px;
+    left: -500px;
     transform: rotate(-70deg);
     opacity: 0.07;
 
@@ -30,26 +30,35 @@ body::after{
     position: absolute;
     top:50%;
     left:50%;
-    color: #BDB76B;
+    color: #323118;
     font-size: 250px;
     font-weight: bold;
-    transform: translate(-50%,-30%);
+    transform: translate(-50%,-40%);
     opacity: 0.3;
 
+}
+.imagens-caixa{
+    position: relative;
+    z-index: 1
 }
 .logo{
     height: 100px;
     border-radius: 30px;
+    position:absolute;
+    top: 3px;
+    left: 3px;
 }
-.tenis1{height: 200px
+.tenis1{
+    height: 200px;
+    
 }
 .tenis2{
     height: 200px
 }
-.tenis3{
+.infantil{
     height: 200px
 }
-.tenis5{
+.infantil2{
     height: 170px;
 
 }
@@ -77,9 +86,67 @@ h3{
 }
 .descricao{
     font-size:30px;
+    display:flex;
+    justify-content:center;
+    
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
-.titulo-logo{
-    display: flex;
-    align-items: center;
+
+.nome{
+    position:absolute;
+    padding:30px;
+    top: 0px;
+    left: 76px;
+}
+@keyframes pulse { 0%{
+    transform:scale(1);
+}
+50%{transform: scale(1.1)};
+100%{
+    transform:scale(1);
+}
+
+}
+.imagens-caixa{
+    animation:pulse 1.5s infinite;
+}
+.feminino{
+    margin-top:10px;
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius:5px;
+    position:absolute;
+    top:180px;
+    left:50px;
+}
+.TENIS{
+
+    margin-top:10px;
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius:5px;
+    position:absolute;
+    top:180px;
+    left:250px;
+}
+.Infantil{
+    margin-top:10px;
+    padding:10px 20px;
+    
+    border: 1px solid;
+    border-radius:5px;
+    position:absolute;
+    top:180px;
+    left:460px;
+}
+.Infantil2{ 
+    margin-top:10px;
+    padding:10px 20px;
+    border: 1px solid;
+    border-radius:5px;
+    position:absolute;
+    top:180px;
+    left:680px;
+
 }
