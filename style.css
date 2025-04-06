@@ -45,11 +45,9 @@ body::after{
 .LOGO{
     z-index:1;
     height: 100px;
-    border-radius: 30px;
+
     position:absolute;
-    top: 3px;
-    left:3px;
-    border: 4px double;
+   
 }
 
 .tenis-feminino{
@@ -132,9 +130,6 @@ h3{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: #4c3c31;;
     width: 40vw;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-0%);
     border-radius: 10px;
     border: 3px double;
     text-shadow: 
@@ -142,12 +137,7 @@ h3{
     color:white
 }
 
-.nome{
-    position:absolute;
-    padding:30px;
-    top: 0px;
-    left: 85px;
-}
+
 @keyframes pulse { 
 0%{
     transform:scale(1);
@@ -159,15 +149,8 @@ h3{
 }
 .imagens-caixa{
     
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-    height: 15vw;
     position: relative;
     width: 93vw;
-    overflow: hidden;
    
 }
 .imagens-caixa::before{
@@ -349,7 +332,8 @@ h3{
 }
 .divulga{
     position: absolute;
-    left: 68vw;
+    left: 66%;
+    top:1%;
     background: white;
     width: 23vw;
     height: auto;
@@ -395,7 +379,4 @@ h3{
     50% { transform: rotate(-3deg); }
     75% { transform: rotate(3deg); }
     100% { transform: rotate(0deg); }
-}
-.caixa{
-    position:relative;
 }
