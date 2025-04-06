@@ -1,0 +1,20 @@
+name: pages build and deployment
+
+on:
+  push:
+    branches:
+      - main # Substitua "main" pela branch que você está usando, se for diferente.
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./ # Diretório onde estão os arquivos do site
