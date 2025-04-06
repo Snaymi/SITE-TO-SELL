@@ -298,39 +298,27 @@ h3{
 }
 
 
-.cidades{
-    position:absolute;
-    left:60%;
-    top:85%;
-    width:300px;
-    height:300px;
+.cidades {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+    margin-top: 20px; /* Espaçamento superior */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
 }
-.rio-bonito{
-    font-size: 30px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: relative;
-    top: -1vw;
-    left: -18.3vw;
+
+.rio-bonito,
+.tangua {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: #7e735f;
-    width: 180px;
-    text-align:center;
+    width: 150px;
+    text-align: center;
     border-radius: 5px;
-    border:double;
-    color:#e8eded;
-    
-}
-.tangua{
-    font-size: 30px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: relative;
-    top: -3.5vw;
-    left:0vw;
-    background: #7e735f;
-    width: 180px;
-    text-align:center;
-    border-radius: 5px;
-    border:double;
-    color:#e8eded;
+    border: double;
+    color: #e8eded;
+    padding: 10px; /* Adiciona espaçamento interno */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Adiciona um leve destaque */
 }
 .qrcode{
     height:15vw;
