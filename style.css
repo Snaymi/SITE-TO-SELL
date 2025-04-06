@@ -51,39 +51,39 @@ body::after{
     left:3px;
     border: 4px double;
 }
+
 .tenis-feminino{
     
     
     position:relative;
-    height: 15vw;
+    height: 13vw;
     width:auto;
-    top:3%;
-    left:-10%;
+    top:-1vw;
+    left:-18vw;
    
     
 }
-.tenis2{
-    height: 200px;
+.tenis-masculino{
+    height: 12vw;
     position:relative;
-    top:90%;
-    left: -20%;
+    top: -1vw;
+    left: -23vw;
     transform: rotate(25deg);
     
 }
 .infantil-masculino{
-    height: 20vw;
+    height: 21vw;
     width:auto;
     position:relative;
-    top:13%;
-    left:-20%;
+    top: 0vw;
+    left:-30vw;
+    transform: rotate(25deg);
 }
-.infantil-feminino{
-    height: 20vw;
-    width:auto;
-    position:relative;
-    top:90%;
-    left:-130%;
-
+.infantil-feminino{ 
+    position:absolute;
+    top: -4.5vw;
+    left: 47vw;
+    height: 25vw;
 }
 h2{font-size: 50px;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
@@ -96,11 +96,11 @@ h3{
     
 }
 .botao{
-    position:relative;
-    display: flex;
+    position:absolute;
+    display: inline-block;
     font-size: 70px;
     background: #4c3c31;
-    padding: 10px 20px;
+    padding: 2vw 20vw;
     border-radius: 30px;
     cursor: pointer;
     transition: 0.9s;
@@ -112,24 +112,31 @@ h3{
     border: 3px double;
     animation: piscar 1s infinite, pulse 0,5 infinite;
     animation-fill-mode: forwards;
+    text-decoration:none;
+    top: 40%;
+    text-shadow: 0 0 3vw #ffffff;
+    
+
 }
 .botao:hover{
     opacity: 0.7;
 }
 .descricao{
     position: relative;
-    font-size:30px;
+    font-size:50px;
     display:flex;
     justify-content:center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: #f5a968;
-    width: 600px;
+    background: #4c3c31;;
+    width: 40vw;
     top:50%;
     left: 50%;
     transform: translate(-50%,-0%);
     border-radius: 10px;
     border: 3px double;
-    
+    text-shadow: 
+    0 0 7px #ffffff; /* Brilho próximo */
+    color:white
 }
 
 .nome{
@@ -154,9 +161,10 @@ h3{
     align-items: center;
     text-align: center;
     
-    height: 10vw;
+    height: 15vw;
     position: relative;
-    width: 100%;
+    width: 93vw;
+    overflow: hidden;
    
 }
 .imagens-caixa::before{
@@ -171,43 +179,48 @@ h3{
     width:100%;
 }
 .botao-feminino{
-    margin-top:10px;
+    margin-top:10px 20px;
     padding: 10px 20px;
-    border: 1px solid;
+    border: 2px solid;
     border-radius:5px;
-    position:absolute;
-    top:8.3vw;
-    left:5%;
+    position:relative;
+    top:5.7vw;
+    left:-28vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.botao-masculino{
+    padding: 10px 20px;
+    position:relative;
+    top: 5.7vw;
+    left:-35vw;
+    height: auto;
+    width:auto;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .botao-infa-m{
 
     margin-top:10px;
     padding: 10px 20px;
-    border: 1px solid;
-    border-radius:5px;
+    border: 2px solid;
+    border-radius:4px;
     position:absolute;
-    top: 8.3vw;
-    left:35vw;
+    top: 10.9vw;
+    left:33vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.Infantil{
-    margin-top:10px;
-    padding:10px 20px;
-    
-    border: 1px solid;
-    border-radius:5px;
-    position:absolute;
-    top:180px;
-    left:460px;
-}
-.infantil-feminino{ 
-    margin-top:10px;
-    padding:10px 20px;
-    border: 1px solid;
-    border-radius:5px;
-    position:absolute;
-    top:90%;
-    left:51%;
 
+.botao-infa-f{
+    margin-top:10px;
+    padding: 10px 20px;
+    border: 2px solid;
+    border-radius:5px;
+    position:absolute;
+    top: 10.9vw;
+    left:50vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #caixa-bolhas {
     position: fixed;
@@ -237,14 +250,16 @@ h3{
 
 .entregas{
     width: auto;
-    max-width: 250px;
+    max-width: 400px;
     display:flex;
-    position: relative;
-    top: -50px;
-    font-size: 20px;
+    position: absolute;
+    top: 55%;
+    font-size: 30px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:rgb(255, 255, 255);
     text-align: center;
+    border: double 5px;
+    border-radius: 2vw;
     
     
 
@@ -256,10 +271,10 @@ h3{
     left: 0;
     width: 100%;
     height:100%;
-    background: rgba(71, 49, 25, 0.87);
+    background: #4c3c31;
     opacity: 0.9;
     z-index:-1;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 @keyframes piscar {
     0% { opacity: 1; }
@@ -268,12 +283,12 @@ h3{
 }
 #ceu-estrelas {
     position: absolute;
-    width: 100.3%;
-    height: 121%;
+    width: 99.8%;
+    height: 98.3%;
     top: 2px;
     left: 2px;
     z-index: -1;
-    background: radial-gradient(ellipse at bottom, #ffffff 0%, #0c0d13 100%);
+    background: radial-gradient(ellipse at bottom, #966a17 0%, rgba(182, 176, 170, 0.87) 100%);
     overflow: hidden;
     opacity: 0.8;
 }
@@ -300,9 +315,9 @@ h3{
     font-size: 30px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: relative;
-    top:20px;
-    left: -250px;
-    background: #b8a78a;
+    top:-20vw;
+    left: -18.3vw;
+    background: #7e735f;
     width: 180px;
     text-align:center;
     border-radius: 5px;
@@ -314,12 +329,83 @@ h3{
     font-size: 30px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: relative;
-    top: -15px;
-    left: 10px;
-    background: #b8a78a;
+    top: -23vw;
+    left:0vw;
+    background: #7e735f;
     width: 180px;
     text-align:center;
     border-radius: 5px;
     border:double;
     color:#e8eded;
+}
+.qrcode{
+    height:20vw;
+    position: relative;
+    top: 16vw;
+}
+.telefone{
+    font-size: 30px;
+    position: absolute;
+    top: 58vw;
+    left:30vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background:#4c3c31;
+    border: double 5px;
+    width: 60vw;
+    border-radius: 5px;
+    border-color: black;
+    color: white;
+    text-align:center;
+}
+.F{
+    text-shadow: 0 0 10px #ffffff;
+}
+.divulga{
+    position: absolute;
+    left: 68vw;
+    background: white;
+    width: 23vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1px;
+    border: double 5px
+}
+.divulga p{
+    margin: 10px;
+}
+.preco{
+    padding: 15px;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    background: rgb(82, 0, 0);
+    border:double;
+    height: auto;
+    width: auto;
+    text-shadow: 0 0 5px #ff0000,
+                0  0 10px #ff0000, 
+                0  0 20px #ff0000,  
+                0 0 30px #ff0000,  
+                0 0 40px #ff0000,  
+                0 0 50px #ff0000,  
+                0 0 60px #ff0000; 
+    display: inline-block;
+    font-size: 50px;
+    
+    
+    animation: sacudir 0.7s infinite;
+}
+.partir{
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@keyframes sacudir {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+    75% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
 }
