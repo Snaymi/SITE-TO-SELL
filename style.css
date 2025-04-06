@@ -339,21 +339,25 @@ h3{
     left: 8vw;
 }
 .telefone{
+    
     font-size: 30px;
     position: absolute;
-    top: 47vw;
-    left:30vw;
+    top: 50vw;
+    left:50vw;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background:#4c3c31;
     border: double 5px;
-    width: 60vw;
+    width: auto;
+    max-width: 300vw;
     border-radius: 5px;
     border-color: black;
     color: white;
     text-align:center;
+    padding: 10px;
 }
 .F{
     text-shadow: 0 0 10px #ffffff;
+    margin:1vw;
 }
 .divulga{
     position: absolute;
