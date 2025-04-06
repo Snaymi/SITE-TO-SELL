@@ -1,0 +1,411 @@
+h1 {
+    color:black;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{ 
+    margin: 0;
+    padding: 0;
+    background: #9b8b7b;
+    color: black;
+    padding: 50px;
+    height: 100vh;
+    overflow: hidden;
+}
+body::before{
+    content:'';
+    background: #FFDAB9;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -340px;
+    transform: rotate(-70deg);
+    opacity: 0.07;
+
+}
+body::after{
+    content: 'EM';
+    position: absolute;
+    top:50%;
+    left:50%;
+    color: #323118;
+    font-size: 250px;
+    font-weight: bold;
+    transform: translate(-50%,-40%);
+    opacity: 0.1;
+    z-index: 1;
+
+}
+.imagens-caixa{
+    position: relative;
+    z-index: 1
+}
+.LOGO{
+    z-index:1;
+    height: 100px;
+    border-radius: 30px;
+    position:absolute;
+    top: 3px;
+    left:3px;
+    border: 4px double;
+}
+
+.tenis-feminino{
+    
+    
+    position:relative;
+    height: 13vw;
+    width:auto;
+    top:-1vw;
+    left:-18vw;
+   
+    
+}
+.tenis-masculino{
+    height: 12vw;
+    position:relative;
+    top: -1vw;
+    left: -23vw;
+    transform: rotate(25deg);
+    
+}
+.infantil-masculino{
+    height: 21vw;
+    width:auto;
+    position:relative;
+    top: 0vw;
+    left:-30vw;
+    transform: rotate(25deg);
+}
+.infantil-feminino{ 
+    position:absolute;
+    top: -4.5vw;
+    left: 47vw;
+    height: 25vw;
+}
+h2{font-size: 50px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+
+h3{
+    font-size: 80px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.botao{
+    position:absolute;
+    display: inline-block;
+    font-size: 70px;
+    background: #4c3c31;
+    padding: 2vw 20vw;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.9s;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    color: white;
+    border-radius: 10px;
+    border: 3px double;
+    animation: piscar 1s infinite, pulse 0,5 infinite;
+    animation-fill-mode: forwards;
+    text-decoration:none;
+    top: 40%;
+    text-shadow: 0 0 3vw #ffffff;
+    
+
+}
+.botao:hover{
+    opacity: 0.7;
+}
+.descricao{
+    position: relative;
+    font-size:50px;
+    display:flex;
+    justify-content:center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #4c3c31;;
+    width: 40vw;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    border-radius: 10px;
+    border: 3px double;
+    text-shadow: 
+    0 0 7px #ffffff; /* Brilho próximo */
+    color:white
+}
+
+.nome{
+    position:absolute;
+    padding:30px;
+    top: 0px;
+    left: 85px;
+}
+@keyframes pulse { 
+0%{
+    transform:scale(1);
+}
+50%{transform: scale(1.1)};
+100%{
+    transform:scale(1);}
+
+}
+.imagens-caixa{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    height: 15vw;
+    position: relative;
+    width: 93vw;
+    overflow: hidden;
+   
+}
+.imagens-caixa::before{
+    content:'';
+    position:absolute;
+    background:#eded9f;
+    top:0;
+    left:0;
+    border: double;
+    height:120%;
+    z-index: -1;
+    width:100%;
+}
+.botao-feminino{
+    margin-top:10px 20px;
+    padding: 10px 20px;
+    border: 2px solid;
+    border-radius:5px;
+    position:relative;
+    top:5.7vw;
+    left:-28vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.botao-masculino{
+    padding: 10px 20px;
+    position:relative;
+    top: 5.7vw;
+    left:-35vw;
+    height: auto;
+    width:auto;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.botao-infa-m{
+
+    margin-top:10px;
+    padding: 10px 20px;
+    border: 2px solid;
+    border-radius:4px;
+    position:absolute;
+    top: 10.9vw;
+    left:33vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.botao-infa-f{
+    margin-top:10px;
+    padding: 10px 20px;
+    border: 2px solid;
+    border-radius:5px;
+    position:absolute;
+    top: 10.9vw;
+    left:50vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#caixa-bolhas {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    width: var(--size);
+    height: var(--size);
+    background: rgb(240, 237, 237);
+    border-radius: 50%;
+    animation: float 10s infinite linear;
+}
+
+/* Animação das bolhas */
+@keyframes float {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+}
+
+.entregas{
+    width: auto;
+    max-width: 400px;
+    display:flex;
+    position: absolute;
+    top: 55%;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    border: double 5px;
+    border-radius: 2vw;
+    
+    
+
+}
+.entregas::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background: #4c3c31;
+    opacity: 0.9;
+    z-index:-1;
+    border-radius: 10px;
+}
+@keyframes piscar {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+#ceu-estrelas {
+    position: absolute;
+    width: 99.8%;
+    height: 98.3%;
+    top: 2px;
+    left: 2px;
+    z-index: -1;
+    background: radial-gradient(ellipse at bottom, #966a17 0%, rgba(182, 176, 170, 0.87) 100%);
+    overflow: hidden;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.cidades{
+    position:absolute;
+    left:60%;
+    top:85%;
+    width:300px;
+    height:300px;
+}
+.rio-bonito{
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    top:-20vw;
+    left: -18.3vw;
+    background: #7e735f;
+    width: 180px;
+    text-align:center;
+    border-radius: 5px;
+    border:double;
+    color:#e8eded;
+    
+}
+.tangua{
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    top: -23vw;
+    left:0vw;
+    background: #7e735f;
+    width: 180px;
+    text-align:center;
+    border-radius: 5px;
+    border:double;
+    color:#e8eded;
+}
+.qrcode{
+    height:20vw;
+    position: relative;
+    top: 16vw;
+}
+.telefone{
+    font-size: 30px;
+    position: absolute;
+    top: 58vw;
+    left:30vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background:#4c3c31;
+    border: double 5px;
+    width: 60vw;
+    border-radius: 5px;
+    border-color: black;
+    color: white;
+    text-align:center;
+}
+.F{
+    text-shadow: 0 0 10px #ffffff;
+}
+.divulga{
+    position: absolute;
+    left: 68vw;
+    background: white;
+    width: 23vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1px;
+    border: double 5px
+}
+.divulga p{
+    margin: 10px;
+}
+.preco{
+    padding: 15px;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    background: rgb(82, 0, 0);
+    border:double;
+    height: auto;
+    width: auto;
+    text-shadow: 0 0 5px #ff0000,
+                0  0 10px #ff0000, 
+                0  0 20px #ff0000,  
+                0 0 30px #ff0000,  
+                0 0 40px #ff0000,  
+                0 0 50px #ff0000,  
+                0 0 60px #ff0000; 
+    display: inline-block;
+    font-size: 50px;
+    
+    
+    animation: sacudir 0.7s infinite;
+}
+.partir{
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@keyframes sacudir {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+    75% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+}
