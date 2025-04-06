@@ -11,7 +11,7 @@ body{
     color: black;
     padding: 50px;
     height: 100vh;
-    overflow: hidden;
+    
 }
 body::before{
     content:'';
@@ -96,11 +96,13 @@ h3{
     
 }
 .botao{
-    position:absolute;
+    position:relative;
     display: inline-block;
     font-size: 70px;
     background: #4c3c31;
-    padding: 2vw 20vw;
+    min-width: 80vw;
+    height: auto;
+    width: auto;
     border-radius: 30px;
     cursor: pointer;
     transition: 0.9s;
@@ -113,7 +115,8 @@ h3{
     animation: piscar 1s infinite, pulse 0,5 infinite;
     animation-fill-mode: forwards;
     text-decoration:none;
-    top: 40%;
+    top: -5vw;
+    left: 5.5vw;
     text-shadow: 0 0 3vw #ffffff;
     
 
@@ -250,16 +253,15 @@ h3{
 
 .entregas{
     width: auto;
-    max-width: 400px;
+    max-width: 30vw;
     display:flex;
-    position: absolute;
-    top: 55%;
-    font-size: 30px;
+    position: relative;
+    top: -8vw;
+    font-size: 40px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:rgb(255, 255, 255);
     text-align: center;
-    border: double 5px;
-    border-radius: 2vw;
+
     
     
 
@@ -274,7 +276,9 @@ h3{
     background: #4c3c31;
     opacity: 0.9;
     z-index:-1;
-    border-radius: 10px;
+    border-radius: 16%;
+    border: double 5px;
+    border-radius: 2vw;
 }
 @keyframes piscar {
     0% { opacity: 1; }
@@ -294,16 +298,6 @@ h3{
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .cidades{
     position:absolute;
     left:60%;
@@ -315,7 +309,7 @@ h3{
     font-size: 30px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: relative;
-    top:-20vw;
+    top: -1vw;
     left: -18.3vw;
     background: #7e735f;
     width: 180px;
@@ -329,7 +323,7 @@ h3{
     font-size: 30px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: relative;
-    top: -23vw;
+    top: -3.5vw;
     left:0vw;
     background: #7e735f;
     width: 180px;
@@ -339,14 +333,15 @@ h3{
     color:#e8eded;
 }
 .qrcode{
-    height:20vw;
+    height:15vw;
     position: relative;
-    top: 16vw;
+    top: -5vw;
+    left: 8vw;
 }
 .telefone{
     font-size: 30px;
     position: absolute;
-    top: 58vw;
+    top: 47vw;
     left:30vw;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background:#4c3c31;
@@ -408,4 +403,7 @@ h3{
     50% { transform: rotate(-3deg); }
     75% { transform: rotate(3deg); }
     100% { transform: rotate(0deg); }
+}
+.caixa{
+    position:relative;
 }
