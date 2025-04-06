@@ -31,22 +31,23 @@ body::after{
     z-index: -1;
 
 }
-.tenis5{
-   height: 300px;
-   padding: 10px 10px
-}
+
+
 h1{
-    border-radius: 40px;
-    background: #F0E68C
+    background: #ffcb62
     
 }
 h1{
     padding:20px 40px;
-    font-size: 50px;
-    position:absolute;
-    top: 70px;
-    left: 160px;
+    font-size: 30px;
+    position:relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-150%);
+    border-radius: 300px;
+    border: 8px double;
     text-align: center;
+    width: 400px;
 }
 
 .botao{
@@ -97,10 +98,11 @@ h1{
 }
 .contato{
     position:absolute;
-    top: 200px;
-    left: 450px;
-    font-size: 25px;
-    font-weight: bold;
+    margin: 0;
+    top: 100px;
+    left: 15px;
+    width:200px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 .provocacao{
     position:absolute;
@@ -140,3 +142,30 @@ h1{
     background: #936633;
     border-radius: 50px;
 }
+#caixa-bolhas {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    width: var(--size);
+    height: var(--size);
+    background: rgb(240, 237, 237);
+    border-radius: 50%;
+    animation: float 10s infinite linear;
+}
+
+/* Animação das bolhas */
+@keyframes float {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+}
+
+  
