@@ -138,21 +138,28 @@ body::after{
 .carousel-inner {
     position: relative; /* Garante que o fundo seja aplicado corretamente */
     overflow: hidden; /* Esconde o excesso do fundo */
-    animation: slide 3s linear infinite alternate ; /* Animação do fundo */
+    animation: slide 5s linear infinite alternate; /* Animação do fundo */
     background: linear-gradient(
         -60deg,
-        #6c3 0%,
-        #09f 25%,
-        black 50%,
-        yellow 75%,
-        #FF00FF 100%); /* Gradiente diagonal */
+        #ffae00 ,
+        rgb(248, 230, 159) ,
+        rgb(80, 48, 0) ,
+        rgb(255, 190, 79) ,
+        rgb(81, 0, 0) ,
+        #916314,
+        #ffae00 ,
+        rgb(248, 230, 159) ,
+        rgb(80, 48, 0) ,
+        rgb(255, 190, 79) ,
+        rgb(81, 0, 0) ,
+        #916314 ); /* Gradiente diagonal */
     background-size: 300% 300%; /* Garante que o gradiente ocupe mais espaço para o efeito */
     background-repeat: repeat;
 }
 
 @keyframes slide {
     0% {
-        background-position: 0 0;
+        background-position: 1% 100%;
     }
     100% {
         background-position: 100% 100%;
