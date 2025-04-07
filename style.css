@@ -85,37 +85,47 @@ body::after{
     0 0 60px #7d4901; /* Efeito neon */
 
 }
-.feminino-abaixo{
-    font-size:15px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: relative;
-    top: 3vw;
-    
 
-}
-@media (min-width: 768px) {
-    .feminino-abaixo {
-        top: 5vw; /* Ajusta a posição para telas grandes */
-        font-size: 18px; /* Aumenta o tamanho da fonte */
-        text-align: center; /* Mantém o texto centralizado */
-    }
-}
 .masculino{
     transform: rotate(20deg);
 }
-.masculino-abaixo{
+.texto-abaixo{
+    
+    margin: 0 auto;
     font-size:15px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width:fit-content;
+    
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: relative;
-    top: 10vw;
+    top: 35.5vw;
+    z-index:10
     
 
 }
 @media (min-width: 768px) {
-    .masculino-abaixo {
+    .texto-abaixo {
         top: 5vw; /* Ajusta a posição para telas grandes */
         font-size: 18px; /* Aumenta o tamanho da fonte */
         text-align: center; /* Mantém o texto centralizado */
     }
 }
+.carousel-item img {
+    position: relative;
+    width: 100%; /* Ajusta a largura para ocupar todo o contêiner */
+    max-width: 300px; /* Define uma largura máxima */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 350px; /* Define uma altura máxima */
+    object-fit: contain; /* Garante que a imagem se ajuste ao contêiner sem distorção */
+    margin: 0 auto; /* Centraliza a imagem */
+    padding: 30px; /* Adiciona um espaçamento interno */
+}
+.carousel-caption{
+    height: 100%;
+}
+.infantil{
+    top: -5vw;
+}
+
 
