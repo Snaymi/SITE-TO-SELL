@@ -85,3 +85,37 @@ body::after{
     0 0 60px #7d4901; /* Efeito neon */
 
 }
+.feminino-abaixo{
+    font-size:15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    top: 3vw;
+    
+
+}
+@media (min-width: 768px) {
+    .feminino-abaixo {
+        top: 5vw; /* Ajusta a posição para telas grandes */
+        font-size: 18px; /* Aumenta o tamanho da fonte */
+        text-align: center; /* Mantém o texto centralizado */
+    }
+}
+.masculino{
+    transform: rotate(20deg);
+}
+.masculino-abaixo{
+    font-size:15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    top: 10vw;
+    
+
+}
+@media (min-width: 768px) {
+    .masculino-abaixo {
+        top: 5vw; /* Ajusta a posição para telas grandes */
+        font-size: 18px; /* Aumenta o tamanho da fonte */
+        text-align: center; /* Mantém o texto centralizado */
+    }
+}
+
