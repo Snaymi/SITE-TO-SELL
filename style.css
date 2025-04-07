@@ -3,7 +3,7 @@ body{
     padding: 0;
     background: #9b8b7b;
     color: black;
-
+    overflow:hidden;
 }
 body::before{
     content:'';
@@ -113,10 +113,10 @@ body::after{
 }
 .carousel-item img {
     position: relative;
-    width: 100%; /* Ajusta a largura para ocupar todo o contêiner */
+    width: auto; /* Ajusta a largura para ocupar todo o contêiner */
     max-width: 300px; /* Define uma largura máxima */
     height: auto; /* Mantém a proporção da imagem */
-    max-height: 350px; /* Define uma altura máxima */
+    max-height: 250px; /* Define uma altura máxima */
     object-fit: contain; /* Garante que a imagem se ajuste ao contêiner sem distorção */
     margin: 0 auto; /* Centraliza a imagem */
     padding: 30px; /* Adiciona um espaçamento interno */
@@ -124,8 +124,13 @@ body::after{
 .carousel-caption{
     height: 100%;
 }
-.infantil{
-    top: -5vw;
+.infantil {
+    width: auto; /* Permite que a largura seja ajustada automaticamente */
+    max-width: 300px; /* Define uma largura máxima */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 250px; /* Define uma altura máxima */
+    object-fit: contain; /* Ajusta a imagem ao contêiner sem distorção */
+    margin: 0 auto; /* Centraliza a imagem */
 }
 
 
