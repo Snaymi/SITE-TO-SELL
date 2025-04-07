@@ -132,5 +132,9 @@ body::after{
     object-fit: contain; /* Ajusta a imagem ao contêiner sem distorção */
     margin: 0 auto; /* Centraliza a imagem */
 }
+.infantil-masculino{
+    transform: rotate(20deg);
+}
+
 
 
