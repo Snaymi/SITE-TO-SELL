@@ -204,6 +204,7 @@ body::after{
     color: #333;
     text-align: center;
 }
+
 #pills-home-tab {
     background-color: #261a00; /* Cor de fundo do botão */
     color: white; /* Cor do texto */
@@ -231,4 +232,24 @@ body::after{
 #pills-profile-tab:hover {
     background-color: #ffe7b7; /* Cor ao passar o mouse */
     color: #6e4414; /* Cor do texto ao passar o mouse */
+}
+#texto-entregamos {
+    height: 50px; /* Define uma altura fixa */
+    visibility: hidden; /* Oculta o texto sem remover o espaço */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background: #fff; /* Fundo branco */
+    border: 1px solid #ccc; /* Borda ao redor */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+    position:absolute;
+}
+
+#texto-entregamos.mostrar {
+    visibility: visible; /* Torna o texto visível */
 }
