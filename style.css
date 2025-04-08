@@ -483,7 +483,7 @@ h3 {
     @media (max-width: 768px) {
         .preco {
             font-size: 20px; /* Ajusta o tamanho da fonte para telas menores */
-            width: 50%; /* Aumenta a largura em telas menores */
+            width: 60%; /* Aumenta a largura em telas menores */
         }
     }
     @media (min-width: 1200px) {
@@ -538,3 +538,6 @@ h3 {
     color: #6e4414; /* Cor do texto ao passar o mouse */
 }
 
+.forte{
+    font-size: 20px;
+}
