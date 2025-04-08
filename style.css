@@ -321,7 +321,7 @@ h1 p{
 @media (max-width: 768px) {
     .fundo {
         position:absolute;
-       
+    
        
         top: 103%;
         left: 50%;
@@ -479,7 +479,18 @@ h3 {
     font-weight: bold;
     color: red;
     animation: blink 0.9s infinite; /* Aplica a animação */
-
+    }
+    @media (max-width: 768px) {
+        .preco {
+            font-size: 20px; /* Ajusta o tamanho da fonte para telas menores */
+            width: 50%; /* Aumenta a largura em telas menores */
+        }
+    }
+    @media (min-width: 1200px) {
+        .preco {
+            font-size: 30px; /* Ajusta o tamanho da fonte para telas maiores */
+            width: 20%; /* Reduz a largura em telas maiores */
+        }
     }
     @keyframes blink {
         0% {
