@@ -257,47 +257,34 @@ body::after{
 h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 10px 2px;
-    color:#cd650a
+    color:#f6cba6
 }
 h1 p{
     margin: 3px;
 }
 .rio-bonito{
-    background: rgb(255, 194, 108);
+    background: rgb(94, 60, 0);
     border-radius: 10px;
-    text-shadow:     0 0 5px #fff, 
-    0 0 10px #613c01, 
-    0 0 20px #e87510, 
-    0 0 30px #ff9500, 
-    0 0 40px #674c00, 
-    0 0 50px #f7ad00, 
-    0 0 60px #7d4901; /* Efeito neon */
-    color:#402e0b
+    color:#ffffff;
 
 }
 .tangua{
     background: rgb(97, 71, 1);
     border-radius: 10px;
-    text-shadow:     0 0 5px #ffffff, 
-    0 0 10px #613c01, 
-    0 0 20px #e87510, 
-    0 0 30px #ff9500, 
-    0 0 40px #674c00, 
-    0 0 50px #f7ad00, 
-    0 0 60px #7d4901; /* Efeito neon */
-    color:#352900
+
+    color:#ffffff;
 
 
 }
 @media (max-width: 768px) {
     #texto-entregamos h1 {
         font-size: 20px; /* Ajusta o tamanho da fonte para telas menores */
-        color: #a9652e; /* Garante que a cor do texto seja aplicada */
+   
         background: #261a00; /* Garante que o fundo seja aplicado */
     }
 
     #texto-entregamos h1 p {
-        color: #856428; /* Garante que a cor do texto seja aplicada */
+
         background: #402e0b; /* Garante que o fundo seja aplicado */
     }
 }
