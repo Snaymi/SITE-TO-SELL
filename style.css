@@ -550,3 +550,8 @@ h3 {
 .forte{
     font-size: 20px;
 }
+img{
+    cursor: pointer;
+    position:absolute;
+    z-index: 10;
+}
