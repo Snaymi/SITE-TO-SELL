@@ -320,9 +320,15 @@ h1 p{
 
 @media (max-width: 768px) {
     .fundo {
-        padding: 10px 0px; /* Reduz o espaçamento interno */
-        position: relative; /* Permite posicionar elementos filhos */
-        top: -2vw;
+        position:absolute;
+       
+       
+        top: 103%;
+        left: 50%;
+        transform: translateX(-50%); /* Centraliza horizontalmente */
+        height: fit-content; /* Aumenta a largura relativa */
+        width: 100% !important; /* Aumenta a largura relativa */
+        
     }
 
     .wpp {
@@ -338,10 +344,12 @@ h1 p{
 }
 @media (min-width: 1200px) {
     .fundo {
+        position:absolute;
         max-width: 60%; /* Reduz a largura máxima em telas grandes */
         width: auto; /* Aumenta a largura relativa */
-        left: -20vw;
-        top:-5px;
+        left: 50%;
+        transform: translateX(-50%); /* Centraliza horizontalmente */
+        top:105%;
     }
 
     .wpp {
@@ -519,9 +527,3 @@ h3 {
     color: #6e4414; /* Cor do texto ao passar o mouse */
 }
 
-@media (max-width: 768px) {
-    .nav-pills {
-        flex-wrap: nowrap; /* Impede que os itens quebrem para a próxima linha */
-        justify-content: space-around; /* Distribui os itens horizontalmente */
-    }
-}
