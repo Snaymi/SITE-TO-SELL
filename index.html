@@ -99,12 +99,22 @@
       </button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Sobre</button>
+      <button class="nav-link " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+        Sobre
+      </button>
     </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Disabled</button>
+    <li class="nav-item dropdown" role="presentation">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Categorias
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Bolsas</a></li>
+          <li><a class="dropdown-item" href="#">Tenis</a></li>
+          <li><a class="dropdown-item" href="#">Sandálias</a></li>
+        </ul>
+      </div>
     </li>
-  </ul>
   <div class="tab-content" id="pills-tabContent">
     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
      
@@ -124,7 +134,17 @@
         
       </div>
     </div>
-    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">..</div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+      <div class="fundo">
+        <h2>Sobre nós:</h2>
+        <p>Trabalhamos sob a encomenda, pague 50% do valor do produto ao encomendar e o restanste apenas quando chegar</p>
+        <p>Nosso objetivo é oferecer uma experiência de compra única e satisfatória com valor acessível</p>
+        <p>Estamos sempre atualizando nosso estoque com as últimas tendências da moda.</p>
+        <p class="prazo">(Pedimos um prazo máximo de 15 dias para chegada)</p>
+        <h3> Produtos a partir de: </h3>
+        <p class="preco">R$ 14,99</p>
+      </div>
+    </div>
     <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
   </div>
   
