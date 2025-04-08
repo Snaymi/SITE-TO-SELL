@@ -317,6 +317,7 @@ h1 p{
     .whatsapp-link {
         font-size: 0.9rem; /* Reduz o tamanho do texto */
         padding: 8px 15px; /* Ajusta o espaçamento interno */
+        z-index: 10; /* Eleva o botão acima de outros elementos */
     }
 }
 @media (min-width: 1200px) {
@@ -332,6 +333,7 @@ h1 p{
     .whatsapp-link {
         font-size: 1.1rem; /* Aumenta o tamanho do texto */
         padding: 12px 25px; /* Ajusta o espaçamento interno */
+        z-index: 10; /* Eleva o botão acima de outros elementos */
     }
 }
 
@@ -387,6 +389,6 @@ button:hover {
     color: #6e4414; /* Cor do texto ao passar o mouse */
 }
 .whatsapp-link{
-    z-index: 2;
+    z-index: 10;
 }
 
