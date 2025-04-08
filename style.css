@@ -66,6 +66,13 @@ body::after{
     border-color: #402e0b;
     
 }
+@media (max-width: 768px) {
+    .logo {
+        width: 20%; /* Aumenta a largura em telas menores */
+        height: 80px;
+        width: auto;
+    }
+}
 .nome{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: block;
@@ -87,6 +94,12 @@ body::after{
     0 0 50px #f7ad00, 
     0 0 60px #7d4901; /* Efeito neon */
 
+}
+@media (max-width: 768px) {
+    .nome {
+        width: 80%; /* Aumenta a largura em telas menores */
+        font-size: 20px; /* Aumenta o tamanho da fonte */
+    }
 }
 
 .masculino{
@@ -323,6 +336,9 @@ h1 p{
 @media (min-width: 1200px) {
     .fundo {
         max-width: 60%; /* Reduz a largura máxima em telas grandes */
+        width: auto; /* Aumenta a largura relativa */
+        left: -20vw;
+        top:-5px;
     }
 
     .wpp {
@@ -354,12 +370,14 @@ h1 p{
 @media (max-width: 768px) {
     .wpp {
         height: 40vw; /* Aumenta o tamanho em telas menores */
+        width: auto; /* Aumenta a largura relativa */
     }
 }
 
 @media (min-width: 1200px) {
     .wpp {
         height: 10vw; /* Reduz o tamanho em telas maiores */
+        width: auto; /* Aumenta a largura relativa */
     }
 }
 .fundo h2{
