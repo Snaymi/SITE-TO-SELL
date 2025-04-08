@@ -278,7 +278,7 @@ h1 p{
 .tangua{
     background: rgb(97, 71, 1);
     border-radius: 10px;
-    text-shadow:     0 0 5px #c0f403, 
+    text-shadow:     0 0 5px #ffffff, 
     0 0 10px #613c01, 
     0 0 20px #e87510, 
     0 0 30px #ff9500, 
@@ -288,4 +288,16 @@ h1 p{
     color:#352900
 
 
+}
+@media (max-width: 768px) {
+    #texto-entregamos h1 {
+        font-size: 20px; /* Ajusta o tamanho da fonte para telas menores */
+        color: #a9652e; /* Garante que a cor do texto seja aplicada */
+        background: #261a00; /* Garante que o fundo seja aplicado */
+    }
+
+    #texto-entregamos h1 p {
+        color: #856428; /* Garante que a cor do texto seja aplicada */
+        background: #402e0b; /* Garante que o fundo seja aplicado */
+    }
 }
