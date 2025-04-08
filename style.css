@@ -3,7 +3,6 @@ body{
     padding: 0;
     background: #9b8b7b;
     color: black;
-    overflow:hidden;
 }
 body::before{
     content:'';
@@ -212,6 +211,7 @@ body::after{
     padding: 10px 20px; /* Ajusta o espaçamento interno */
     font-weight: bold; /* Deixa o texto em negrito */
     transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+    margin-bottom: 0px; /* Adiciona um espaçamento inferior */
 }
 
 #pills-home-tab:hover {
@@ -301,3 +301,105 @@ h1 p{
         background: #402e0b; /* Garante que o fundo seja aplicado */
     }
 }
+
+.fundo {
+    height: fit-content; /* Define uma altura fixa */
+    background: #261a00; /* Cor de fundo */
+    padding: 0px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o conteúdo */
+    max-width: 90%; /* Limita a largura máxima */
+    margin: -1vw auto; /* Centraliza horizontalmente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9); /* Adiciona sombra */
+    position: relative; /* Permite posicionar elementos filhos */
+    left: -5vw; /* Alinha à esquerda */
+}
+
+@media (max-width: 768px) {
+    .fundo {
+        padding: 10px 0px; /* Reduz o espaçamento interno */
+        position: relative; /* Permite posicionar elementos filhos */
+        top: -2vw;
+    }
+
+    .wpp {
+        width: 70%; /* Aumenta a largura relativa */
+        max-width: 150px; /* Reduz a largura máxima */
+    }
+
+    .whatsapp-link {
+        font-size: 0.9rem; /* Reduz o tamanho do texto */
+        padding: 8px 15px; /* Ajusta o espaçamento interno */
+    }
+}
+@media (min-width: 1200px) {
+    .fundo {
+        max-width: 60%; /* Reduz a largura máxima em telas grandes */
+    }
+
+    .wpp {
+        width: 40%; /* Reduz a largura relativa */
+        max-width: 250px; /* Aumenta a largura máxima */
+    }
+
+    .whatsapp-link {
+        font-size: 1.1rem; /* Aumenta o tamanho do texto */
+        padding: 12px 25px; /* Ajusta o espaçamento interno */
+    }
+}
+
+
+
+
+.wpp {
+    width: 50%; /* Largura relativa */
+    max-width: 200px; /* Largura máxima */
+    height: auto; /* Mantém a proporção */
+    border-radius: 5%; /* Bordas arredondadas */
+    border: double 2px #402e0b; /* Borda decorativa */
+    margin: 10px auto; /* Centraliza e adiciona espaçamento */
+    display: block;
+    position: relative; /* Permite posicionar elementos filhos */
+}
+
+@media (max-width: 768px) {
+    .wpp {
+        height: 40vw; /* Aumenta o tamanho em telas menores */
+    }
+}
+
+@media (min-width: 1200px) {
+    .wpp {
+        height: 10vw; /* Reduz o tamanho em telas maiores */
+    }
+}
+.fundo h2{
+    font-size: 20px;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fundo h3{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size:large;
+}
+button {
+    background-color: #261a00; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer; /* Mostra o cursor de "mãozinha" */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+button:hover {
+    background-color: #ffe7b7; /* Cor ao passar o mouse */
+    color: #6e4414; /* Cor do texto ao passar o mouse */
+}
+.whatsapp-link{
+    z-index: 2;
+}
+
