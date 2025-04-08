@@ -216,7 +216,7 @@ body::after{
     
 }
 
-#pills-home-tab {
+#pills-home-tab /*Botão de ENTREGA */{
     background-color: #261a00; /* Cor de fundo do botão */
     color: white; /* Cor do texto */
     border: none; /* Remove a borda padrão */
@@ -231,7 +231,7 @@ body::after{
     background-color: #ffe7b7; /* Cor ao passar o mouse */
     color: #6e4414; /* Cor do texto ao passar o mouse */
 }
-#pills-profile-tab {
+#pills-profile-tab /* Botão de CONTATO */{
     background-color: #261a00; /* Cor de fundo do botão */
     color: white; /* Cor do texto */
     border: none; /* Remove a borda padrão */
@@ -413,4 +413,104 @@ button:hover {
     z-index: 10;
     pointer-events: auto; /* Garante que o link seja clicável */
 }
+#pills-contact-tab /* Botão de SOBRE */{
+    background-color: #261a00; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Ajusta o espaçamento interno */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
 
+#pills-contact-tab:hover {
+    background-color: #ffe7b7; /* Cor ao passar o mouse */
+    color: #6e4414; /* Cor do texto ao passar o mouse */
+}
+.fundo {
+    width: fit-content; /* Largura fixa */
+}
+.fundo h2{
+    color:#ffa45a;
+    font-size: 40px;
+}
+.fundo p{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 1px;
+    padding: 0px;
+    color:#ffa45a;
+}
+h3 {
+    color:#ffa45a !important;
+    padding: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.preco {
+    font-size:30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    border: double 4px;
+    display: inline-block;
+    color: red !important;
+    text-shadow: 0 0 5px #000000,
+    0 0 10px #ff5656,
+    0 0 20px #330000, 
+    0 0 30px #ff0000, 
+    0 0 40px #3d0000, 
+    0 0 50px #450000, 
+    0 0 60px #ff0000; /* Efeito neon */
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    animation: blink 0.9s infinite; /* Aplica a animação */
+
+    }
+    @keyframes blink {
+        0% {
+            opacity: 1; /* Totalmente visível */
+        }
+        50% {
+            opacity: 0; /* Invisível */
+        }
+        100% {
+            opacity: 1; /* Totalmente visível novamente */
+        }
+    }
+    .prazo{
+        font-size: 13px;
+    }
+.dropdown {
+    position:relative;
+    z-index: 10; /* Eleva o dropdown acima de outros elementos */
+    
+}
+.dropdown-menu {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    position: absolute; /* Permite posicionar o menu em relação ao botão */
+    top: 100%; /* Coloca o menu logo abaixo do botão */
+    left: 0; /* Alinha à esquerda */
+    background-color: #976905; /* Cor de fundo do menu */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra do menu */
+    z-index: 20; /* Eleva o menu acima de outros elementos */
+    
+}
+.dropdown-menu a{
+    color:white
+}
+.dropdown .btn-secondary{
+    background-color: #261a00; /* Cor de fundo do botão */
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.dropdown .btn-secondary:hover{
+    background-color: #ffe7b7; /* Cor ao passar o mouse */
+    color: #6e4414; /* Cor do texto ao passar o mouse */
+}
