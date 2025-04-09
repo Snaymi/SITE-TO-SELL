@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #123456; /* Ou qualquer cor válida */
+    background: #9b8b7b;
+    padding: 200px 30px;
+    
+}
+body::before{
+    content:'';
+    background: #FFDAB9;
+    width:100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: -500px;
+    opacity: 0.07;
+    transform:rotate(-70deg);
+}
+body::after{
+    content: 'EM';
+    position: absolute;
+    top:50%;
+    left:50%;
+    color: #323118;
+    font-size: 250px;
+    font-weight: bold;
+    transform: translate(-50%,-40%);
+    opacity: 0.3;
+    z-index: -1;
+
+}
+.imagens{
+    position:relative;
+    z-index: 3;
+}
+
+
+
+
+
+.logo{
+    border-radius: 80px;
+    height: 90px;
+    position:absolute;
+    top: 10px;
+    
+}
+.nome{
+    position:absolute;
+    font-size: 30px;
+    top: 11px;
+    left: 140px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#caixa-bolhas {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    width: var(--size);
+    height: var(--size);
+    background: rgb(240, 237, 237);
+    border-radius: 50%;
+    animation: float 10s infinite linear;
+}
+
+/* Animação das bolhas */
+@keyframes float {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+}
+
+.logo{
+    margin: 2px;
+    width: 10%;
+    border-radius: 50%;
+    border:double 2px;
+    border-color: #402e0b;
+    
+}
+@media (max-width: 768px) {
+    .logo {
+        width: auto; /* Aumenta a largura em telas menores */
+        height: 15%;
+        
+    }
+}
+@media (min-width: 1200px) {
+    .logo {
+        width: auto; /* Reduz a largura em telas maiores */
+        height: 15%;
+        
+    }
+}
+.nome{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    text-align: center; /* Centraliza o texto */
+    margin: 0 auto; /* Centraliza o elemento horizontalmente */
+    width: 100%; 
+    background: #402e0b;
+    color: white;
+    border: double;
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-shadow:     0 0 5px #fff, 
+    0 0 10px #613c01, 
+    0 0 20px #e87510, 
+    0 0 30px #ff9500, 
+    0 0 40px #674c00, 
+    0 0 50px #f7ad00, 
+    0 0 60px #7d4901; /* Efeito neon */
+    position:absolute;
+    left:35%;
+}
+@media (max-width: 768px) {
+    .nome {
+        width: 30%; /* Aumenta a largura em telas menores */
+        font-size: 30px; /* Aumenta o tamanho da fonte */
+    }
+}
+@media (min-width: 1200px) {
+    .nome {
+        width: 30%; /* Reduz a largura em telas maiores */
+        font-size: 50px; /* Aumenta o tamanho da fonte */
+        left:35%;
+    }
+}
+
+.fundo-produtos{
+    background: black;
+    opacity:0.7;
+    position:absolute;
+    z-index: -1;
+}
+
+  
