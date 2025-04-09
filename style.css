@@ -73,6 +73,13 @@ body::after{
         width: auto;
     }
 }
+@media (min-width: 1200px) {
+    .logo {
+        width: 10%; /* Reduz a largura em telas maiores */
+        height: 90px;
+        width: auto;
+    }
+}
 .nome{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: block;
@@ -99,6 +106,7 @@ body::after{
     .nome {
         width: 80%; /* Aumenta a largura em telas menores */
         font-size: 20px; /* Aumenta o tamanho da fonte */
+      
     }
 }
 
