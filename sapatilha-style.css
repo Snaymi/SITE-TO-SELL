@@ -3,6 +3,7 @@ body{
     padding: 0;
     background: #9b8b7b;
     color: black;
+    overflow-y: scroll;
 }
 body::before{
     content:'';
@@ -29,6 +30,17 @@ body::before{
 }
 .prazo{
     font-size: 13px;
+}
+.carousel-inner {
+    position: relative;
+    
+    visibility: visible;
+   
+}
+.sapatilha{
+    position:relative;
+    width: 100%;
+    height: 100%;
 }
 body::after{
     content: 'EM';
@@ -80,10 +92,7 @@ button {
     transition: background-color 0.3s ease; /* Transição suave */
 }
 
-button:hover {
-    background-color: #ffe7b7; /* Cor ao passar o mouse */
-    color: #6e4414; /* Cor do texto ao passar o mouse */
-}
+
 
 /* Animação das bolhas */
 @keyframes float {
@@ -150,11 +159,11 @@ button:hover {
     
     margin: 0 auto;
     font-size:15px;
-    background: white;
+    background: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 10px 20px;
     width:fit-content;
-    
+    color:black;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     top: 35.5vw;
     z-index:10
@@ -171,7 +180,7 @@ button:hover {
 .carousel-item img {
     position: relative;
     width: auto; /* Ajusta a largura para ocupar todo o contêiner */
-    max-width: 300px; /* Define uma largura máxima */
+    max-width: 200px; /* Define uma largura máxima */
     height: auto; /* Mantém a proporção da imagem */
     max-height: 250px; /* Define uma altura máxima */
     object-fit: contain; /* Garante que a imagem se ajuste ao contêiner sem distorção */
@@ -223,10 +232,10 @@ button:hover {
 h6 {
     position: absolute;
 
-    font-size: 30px !important; 
+    font-size: 20px !important; 
     text-align: center;
     margin: 0 auto;
-    left: -1% ;
+    left: -5% ;
     top: 30%;
     width: 50%;
 }
@@ -340,7 +349,7 @@ a{
 h6 {
     position: absolute;
 
-    font-size: 15px;
+    font-size: 10px;
     text-align: center;
     margin: 0 auto;
     left: -2%;
@@ -392,12 +401,35 @@ a{
     padding: 10px;
     border-radius: 50px;
 }
-.carousel-item img {
-    width: 100%;
-    height: 100%;
-    
+#carouselExampleDark .carousel-item img {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
 
 }
+#carouselExampleDark button {
+    background-color: #7c6a04;
+}
+#carouselExampleDark2 .carousel-item img {
+    max-width: 200px;
+    max-height: 200px;
+    display:block;
+    visibility: visible;
+}
+#carouselExampleDark2 button {
+    background-color: #7c6a04;
+}
+#carouselExampleDark3 .carousel-item img {
+    max-width: 200px;
+    max-height: 200px;
+    display:block;
+    visibility: visible;
+}
+#carouselExampleDark3 button {
+    background-color: #7c6a04;
+}
+
+
 
 
 
