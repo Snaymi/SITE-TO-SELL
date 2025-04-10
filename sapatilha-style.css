@@ -63,6 +63,10 @@ body::after{
     animation: float 10s infinite linear;
     
 }
+h7{
+    position: relative;
+    z-index: 10; /* Eleva o link acima de outros elementos */
+}
 button {
     position:relative;
     z-index: 1;
