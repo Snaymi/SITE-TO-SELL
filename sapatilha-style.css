@@ -327,7 +327,7 @@ a{
 .carousel{
     width: 100%;
 }
-@media (min-width: 320px) and (max-width: 768px){
+@media (min-width: 320px) and (max-width: 768px)/*para smarphones*/{
     .carousel{
         width: 100%; /* Aumenta a largura em telas menores */
     }
@@ -340,7 +340,7 @@ a{
 h6 {
     position: absolute;
 
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     margin: 0 auto;
     left: -2%;
