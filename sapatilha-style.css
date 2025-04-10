@@ -1,21 +1,20 @@
-body {
+body{ 
     margin: 0;
     padding: 0;
-    color: #123456; /* Ou qualquer cor válida */
     background: #9b8b7b;
-    padding: 200px 30px;
-    
+    color: black;
 }
 body::before{
     content:'';
     background: #FFDAB9;
-    width:100%;
+    width: 100%;
     height: 100%;
-    position:absolute;
+    position: absolute;
     top: 0;
-    left: -500px;
+    left: -340px;
+    transform: rotate(-70deg);
     opacity: 0.07;
-    transform:rotate(-70deg);
+
 }
 body::after{
     content: 'EM';
@@ -26,35 +25,10 @@ body::after{
     font-size: 250px;
     font-weight: bold;
     transform: translate(-50%,-40%);
-    opacity: 0.3;
-    z-index: -1;
+    opacity: 0.1;
+    z-index: 1;
 
 }
-.imagens{
-    position:relative;
-    z-index: 3;
-}
-
-
-
-
-
-.logo{
-    border-radius: 80px;
-    height: 90px;
-    position:absolute;
-    top: 10px;
-    
-}
-.nome{
-    position:absolute;
-    font-size: 30px;
-    top: 11px;
-    left: 140px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-
 #caixa-bolhas {
     position: fixed;
     width: 100%;
@@ -73,11 +47,14 @@ body::after{
     background: rgb(240, 237, 237);
     border-radius: 50%;
     animation: float 10s infinite linear;
+    
 }
 
 /* Animação das bolhas */
 @keyframes float {
-    0% { transform: translateY(0); opacity: 1; }
+    0% { transform: translateY(0); opacity: 1; 
+    opacity: 0.08;
+    }
     100% { transform: translateY(-100vh); opacity: 0; }
 }
 
@@ -91,16 +68,16 @@ body::after{
 }
 @media (max-width: 768px) {
     .logo {
-        width: auto; /* Aumenta a largura em telas menores */
-        height: 15%;
-        
+        width: 20%; /* Aumenta a largura em telas menores */
+        height: 80px;
+        width: auto;
     }
 }
 @media (min-width: 1200px) {
     .logo {
-        width: auto; /* Reduz a largura em telas maiores */
-        height: 15%;
-        
+        width: 10%; /* Reduz a largura em telas maiores */
+        height: 90px;
+        width: auto;
     }
 }
 .nome{
@@ -123,28 +100,488 @@ body::after{
     0 0 40px #674c00, 
     0 0 50px #f7ad00, 
     0 0 60px #7d4901; /* Efeito neon */
-    position:absolute;
-    left:35%;
+
 }
 @media (max-width: 768px) {
     .nome {
-        width: 30%; /* Aumenta a largura em telas menores */
-        font-size: 30px; /* Aumenta o tamanho da fonte */
+        width: 80%; /* Aumenta a largura em telas menores */
+        font-size: 20px; /* Aumenta o tamanho da fonte */
+      
+    }
+}
+
+.masculino{
+    transform: rotate(20deg);
+}
+.texto-abaixo{
+    
+    margin: 0 auto;
+    font-size:15px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width:fit-content;
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: 35.5vw;
+    z-index:10
+    
+
+}
+@media (min-width: 768px) {
+    .texto-abaixo {
+        top: 5vw; /* Ajusta a posição para telas grandes */
+        font-size: 18px; /* Aumenta o tamanho da fonte */
+        text-align: center; /* Mantém o texto centralizado */
+    }
+}
+.carousel-item img {
+    position: relative;
+    width: auto; /* Ajusta a largura para ocupar todo o contêiner */
+    max-width: 300px; /* Define uma largura máxima */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 250px; /* Define uma altura máxima */
+    object-fit: contain; /* Garante que a imagem se ajuste ao contêiner sem distorção */
+    margin: 0 auto; /* Centraliza a imagem */
+    padding: 30px; /* Adiciona um espaçamento interno */
+}
+.carousel-caption{
+    height: 100%;
+}
+.infantil {
+    width: auto; /* Permite que a largura seja ajustada automaticamente */
+    max-width: 300px; /* Define uma largura máxima */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 250px; /* Define uma altura máxima */
+    object-fit: contain; /* Ajusta a imagem ao contêiner sem distorção */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+.infantil-masculino{
+    transform: rotate(20deg);
+}
+.carousel-inner {
+    position: relative; /* Garante que o fundo seja aplicado corretamente */
+    overflow: hidden; /* Esconde o excesso do fundo */
+    animation: slide 5s infinite linear alternate; /* Animação do fundo */
+    background: linear-gradient(
+        -60deg,
+        #fcfbfa ,
+        rgb(238, 229, 195) ,
+        rgb(239, 239, 239) ,
+        rgb(255, 224, 170) ,
+        rgb(239, 211, 118) ,
+        #916314,
+        #ffae00 ,
+        rgb(248, 230, 159) ,
+        rgb(204, 166, 108) ,
+        rgb(255, 190, 79) ,
+        rgb(123, 79, 4) ,
+        #916314 ); /* Gradiente diagonal */
+    background-size: 300% 300%; /* Garante que o gradiente ocupe mais espaço para o efeito */
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0% 10%;
+    }
+    25% {
+        background-position: 20% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    75% {
+        background-position: 80% 90%;
+    }
+    100% {
+        background-position: 90% 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-inner {
+        background-size: 300% 300%; /* Ajusta o tamanho do gradiente em telas menores */
+        animation: slide 5s ease-in-out infinite alternate; /* Torna a animação mais lenta */
     }
 }
 @media (min-width: 1200px) {
-    .nome {
-        width: 30%; /* Reduz a largura em telas maiores */
-        font-size: 50px; /* Aumenta o tamanho da fonte */
-        left:35%;
+    .carousel-inner {
+        background-size: 150% 150%; /* Ajusta o tamanho do gradiente em telas maiores */
+    }
+}
+.carousel-indicators {
+    position: absolute; /* Mantém os indicadores dentro do carrossel */
+    display: flex; /* Garante que os botões fiquem alinhados horizontalmente */
+    justify-content: center; /* Centraliza os indicadores */
+    padding:160px
+}
+
+@media (max-width: 768px) {
+    .carousel-indicators {
+        padding:130px;
+    }
+}
+.nav-pills .nav-link {
+    display: flex;
+    position: relative; /* Garante que os botões sejam posicionados corretamente */
+    z-index: 10; /* Eleva os botões acima de outros elementos */
+    flex-wrap: nowrap;
+    
+}
+.entregas-texto {
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+    
+}
+
+#pills-home-tab /*Botão de ENTREGA */{
+    background-color: #261a00; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Ajusta o espaçamento interno */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+    margin-bottom: 0px; /* Adiciona um espaçamento inferior */
+}
+
+#pills-home-tab:hover {
+    background-color: #ffe7b7; /* Cor ao passar o mouse */
+    color: #6e4414; /* Cor do texto ao passar o mouse */
+}
+#pills-profile-tab /* Botão de CONTATO */{
+    background-color: #261a00; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Ajusta o espaçamento interno */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+#pills-profile-tab:hover {
+    background-color: #ffe7b7; /* Cor ao passar o mouse */
+    color: #6e4414; /* Cor do texto ao passar o mouse */
+}
+#texto-entregamos {
+    height: fit-content; /* Define uma altura fixa */
+    visibility: hidden; /* Oculta o texto sem remover o espaço */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background: #261a00; /* Fundo branco */
+    border: 3px solid #040303; /* Borda ao redor */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+    margin-top: 0.5px;
+    position:absolute;
+    width: fit-content;
+}
+#texto-entregamos h1{
+    font-size:25px;
+}
+
+#texto-entregamos.mostrar {
+    visibility: visible; /* Torna o texto visível */
+}
+h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 2px;
+    color:#f6cba6
+}
+h1 p{
+    margin: 3px;
+}
+.rio-bonito{
+    background: rgb(94, 60, 0);
+    border-radius: 10px;
+    color:#ffffff;
+
+}
+.tangua{
+    background: rgb(97, 71, 1);
+    border-radius: 10px;
+
+    color:#ffffff;
+
+
+}
+@media (max-width: 768px) {
+    #texto-entregamos h1 {
+        font-size: 20px; /* Ajusta o tamanho da fonte para telas menores */
+   
+        background: #261a00; /* Garante que o fundo seja aplicado */
+    }
+
+    #texto-entregamos h1 p {
+
+        background: #402e0b; /* Garante que o fundo seja aplicado */
     }
 }
 
-.fundo-produtos{
-    background: black;
-    opacity:0.7;
-    position:absolute;
-    z-index: -1;
+.fundo {
+    height: fit-content; /* Define uma altura fixa */
+    background: #261a00; /* Cor de fundo */
+    padding: 0px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o conteúdo */
+    max-width: 90%; /* Limita a largura máxima */
+    margin: -1vw auto; /* Centraliza horizontalmente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9); /* Adiciona sombra */
+    position: relative; /* Permite posicionar elementos filhos */
+    left: -5vw; /* Alinha à esquerda */
 }
 
-  
+@media (max-width: 768px) {
+    .fundo {
+        position:absolute;
+    
+       
+        top: 103%;
+        left: 50%;
+        transform: translateX(-50%); /* Centraliza horizontalmente */
+        height: fit-content; /* Aumenta a largura relativa */
+        width: 100% !important; /* Aumenta a largura relativa */
+        
+    }
+
+
+    .whatsapp-link {
+        font-size: 0.9rem; /* Reduz o tamanho do texto */
+        padding: 8px 15px; /* Ajusta o espaçamento interno */
+        z-index: 10; /* Eleva o botão acima de outros elementos */
+    }
+}
+@media (min-width: 1200px) {
+    .fundo {
+        position:absolute;
+        max-width: 60%; /* Reduz a largura máxima em telas grandes */
+        width: auto; /* Aumenta a largura relativa */
+        left: 50%;
+        transform: translateX(-50%); /* Centraliza horizontalmente */
+        top:105%;
+    }
+
+.fundo h2{
+    font-size: 20px;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fundo h3{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size:large;
+}
+button {
+    background-color: #261a00; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer; /* Mostra o cursor de "mãozinha" */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+button:hover {
+    background-color: #ffe7b7; /* Cor ao passar o mouse */
+    color: #6e4414; /* Cor do texto ao passar o mouse */
+}
+
+#pills-contact-tab /* Botão de SOBRE */{
+    background-color: #261a00; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Ajusta o espaçamento interno */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+#pills-contact-tab:hover {
+    background-color: #ffe7b7; /* Cor ao passar o mouse */
+    color: #6e4414; /* Cor do texto ao passar o mouse */
+}
+.fundo {
+    width: fit-content; /* Largura fixa */
+}
+.fundo h2{
+    color:#ffa45a;
+    font-size: 40px;
+}
+.fundo p{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 1px;
+    padding: 0px;
+    color:#ffa45a;
+}
+h3 {
+    color:#ffa45a !important;
+    padding: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.preco {
+    font-size:30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    border: double 4px;
+    display: inline-block;
+    color: red !important;
+    text-shadow: 0 0 5px #000000,
+    0 0 10px #ff5656,
+    0 0 20px #330000, 
+    0 0 30px #ff0000, 
+    0 0 40px #3d0000, 
+    0 0 50px #450000, 
+    0 0 60px #ff0000; /* Efeito neon */
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    animation: blink 0.9s infinite; /* Aplica a animação */
+    }
+    @media (max-width: 768px) {
+        .preco {
+            font-size: 20px; /* Ajusta o tamanho da fonte para telas menores */
+            width: 60%; /* Aumenta a largura em telas menores */
+        }
+    }
+    @media (min-width: 1200px) {
+        .preco {
+            font-size: 30px; /* Ajusta o tamanho da fonte para telas maiores */
+            width: 20%; /* Reduz a largura em telas maiores */
+        }
+    }
+    @keyframes blink {
+        0% {
+            opacity: 1; /* Totalmente visível */
+        }
+        50% {
+            opacity: 0; /* Invisível */
+        }
+        100% {
+            opacity: 1; /* Totalmente visível novamente */
+        }
+    }
+    .prazo{
+        font-size: 13px;
+    }
+.dropdown {
+    position:relative;
+    z-index: 10; /* Eleva o dropdown acima de outros elementos */
+    
+    
+}
+.dropdown-menu {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    position: absolute; /* Permite posicionar o menu em relação ao botão */
+    top: 100%; /* Coloca o menu logo abaixo do botão */
+    left: 0; /* Alinha à esquerda */
+    background-color: #976905; /* Cor de fundo do menu */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra do menu */
+    z-index: 20; /* Eleva o menu acima de outros elementos */
+    
+}
+.dropdown-menu a{
+    color:white
+}
+.dropdown .btn-secondary{
+    background-color: #261a00; /* Cor de fundo do botão */
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 9px;
+}
+.dropdown .btn-secondary:hover{
+    background-color: #ffe7b7; /* Cor ao passar o mouse */
+    color: #6e4414; /* Cor do texto ao passar o mouse */
+}
+
+.fonte{
+    font-size: 20px;
+}
+img{
+    cursor: pointer;
+    position:absolute;
+    z-index: 10;
+}
+.carousel{
+    width: 100%;
+}
+@media(max-width:768px){
+    .carousel{
+        width: 100%; /* Aumenta a largura em telas menores */
+    }
+}
+@media (min-width: 1200px) {
+    .carousel {
+        width: 100%; /* Reduz a largura em telas maiores */
+    }
+}
+h6 {
+    position: absolute;
+
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+    left: 3%;
+    top: 25%;
+    width: 50%;
+}
+h7{
+    font-size: 50px;
+    position: absolute;
+    left: 60%;
+    top: 5%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+h7 p{
+    
+    color: #ffc400;
+    background-color: #000000;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+    border: double 4px;
+    animation: blink 0.9s infinite; /* Aplica a animação */
+}
+}
+a.wpp{
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    left: 60%;
+    top: 80%;
+    color:rgb(0, 0, 0);
+    background-color: #62ff00; /* Cor de fundo */
+    width: 10%;
+    height: 20%;
+    border: double;
+    text-align: start;
+    padding: 10px;
+    border-radius: 50px;
+}
+.logo-wpp{
+    width: 30px;
+    height: 30px;
+    /* Espaçamento entre a imagem e o texto */
+    top:20%;
+    left: 65%;
+}
+a{
+    position: relative;
+    z-index: 10; /* Eleva o link acima de outros elementos */
+}
+
+
