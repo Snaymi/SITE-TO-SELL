@@ -267,6 +267,7 @@ img{
     cursor: pointer;
     position:absolute;
     z-index: 10;
+    
 }
 .carousel{
     width: 100%;
@@ -304,18 +305,17 @@ h7 p{
 }
 }
 a.wpp{
-    font-size: 15px;
+    font-size: 10px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: absolute;
-    left: 60%;
-    top: 80%;
+    left: 65%;
+    top: 75%;
     color:rgb(0, 0, 0);
     background-color: #62ff00; /* Cor de fundo */
-    width: 10%;
-    height: 20%;
+    
     border: double;
     text-align: start;
-    padding: 10px;
+    padding: 1px;
     border-radius: 50px;
 }
 .logo-wpp{
@@ -352,8 +352,8 @@ h6 {
     font-size: 10px;
     text-align: center;
     margin: 0 auto;
-    left: -2%;
-    top: 45%;
+    left: 53%;
+    top: 1%;
     width: 50%;
 }
 h7{
@@ -405,6 +405,7 @@ a{
     max-width: 200px;
     max-height: 200px;
     object-fit: contain;
+    left: -15%;
 
 }
 #carouselExampleDark button {
@@ -413,8 +414,8 @@ a{
 #carouselExampleDark2 .carousel-item img {
     max-width: 200px;
     max-height: 200px;
-    display:block;
-    visibility: visible;
+    object-fit: contain;
+    left: -15%;
 }
 #carouselExampleDark2 button {
     background-color: #7c6a04;
@@ -422,12 +423,23 @@ a{
 #carouselExampleDark3 .carousel-item img {
     max-width: 200px;
     max-height: 200px;
-    display:block;
-    visibility: visible;
+    object-fit: contain;
+    left: -15%;
 }
 #carouselExampleDark3 button {
     background-color: #7c6a04;
 }
+#carouselExampleDark4 .carousel-item img {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+    left: -15%;
+
+}
+#carouselExampleDark4 button {
+    background-color: #7c6a04;
+}
+
 
 
 
