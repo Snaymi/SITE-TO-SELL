@@ -37,10 +37,18 @@ body::before{
     visibility: visible;
    
 }
-.sapatilha{
+.titulo{
+    display: flex;
     position:relative;
     width: 100%;
-    height: 100%;
+    margin: 0 auto;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    justify-content: center;
+    
+    
+    
 }
 body::after{
     content: 'EM';
@@ -54,6 +62,13 @@ body::after{
     opacity: 0.1;
     z-index: 1;
 
+}
+h8{
+    font-weight: bold;
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    font-size: 15px;
 }
 #caixa-bolhas {
     position: fixed;
@@ -185,12 +200,6 @@ button {
     height: 100%;
 }
 
-.carousel-inner {
-    position: relative; /* Garante que o fundo seja aplicado corretamente */
-    overflow: hidden; /* Esconde o excesso do fundo */
-    animation: slide 5s infinite linear alternate; /* Animação do fundo */
-    background:  rgb(236, 221, 186); /* Cor de fundo padrão */
-}
 
 @keyframes slide {
     0% {
@@ -219,17 +228,7 @@ h6 {
     top: 30%;
     width: 50%;
 }
-@media (max-width: 768px) {
-    .carousel-inner {
-        background-size: 300% 300%; /* Ajusta o tamanho do gradiente em telas menores */
-        animation: slide 5s ease-in-out infinite alternate; /* Torna a animação mais lenta */
-    }
-}
-@media (min-width: 1200px) {
-    .carousel-inner {
-        background-size: 150% 150%; /* Ajusta o tamanho do gradiente em telas maiores */
-    }
-}
+
 .carousel-indicators {
     position: absolute; /* Mantém os indicadores dentro do carrossel */
     display: flex; /* Garante que os botões fiquem alinhados horizontalmente */
@@ -326,6 +325,7 @@ a{
         width: 100%; /* Reduz a largura em telas maiores */
     }
 }
+
 h6 {
     position: absolute;
 
@@ -355,7 +355,23 @@ h7 p{
     border: double 4px;
     animation: blink 0.9s infinite; /* Aplica a animação */
 }
+h5{
+    position: absolute;
+    top: 1% !important;;
+    left: 25% !important;
 }
+
+  
+.carousel-inner {
+    position: relative; 
+    width: 100%;
+    height: 300px;
+    background:  rgb(236, 221, 186); /* Cor de fundo padrão */
+    border: double 4px; /* Borda dupla */
+
+}
+}
+
 
 .logo-wpp{
     width: 30px;
@@ -382,9 +398,10 @@ a{
     border-radius: 50px;
 }
 #carouselExampleDark .carousel-item img {
-    max-width: 200px;
-    max-height: 200px;
-    object-fit: contain;
+    
+    max-width: 300px;
+    max-height: 300px;
+ 
     left: -15%;
 
 }
@@ -392,8 +409,8 @@ a{
     background-color: #7c6a04;
 }
 #carouselExampleDark2 .carousel-item img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 300px;
+    max-height: 300px;
     object-fit: contain;
     left: -15%;
 }
@@ -401,8 +418,8 @@ a{
     background-color: #7c6a04;
 }
 #carouselExampleDark3 .carousel-item img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 300px;
+    max-height: 300px;
     object-fit: contain;
     left: -15%;
 }
@@ -410,13 +427,31 @@ a{
     background-color: #7c6a04;
 }
 #carouselExampleDark4 .carousel-item img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 300px;
+    max-height: 300px;
     object-fit: contain;
     left: -15%;
 
 }
 #carouselExampleDark4 button {
+    background-color: #7c6a04;
+}
+#carouselExampleDark5 .carousel-item img {
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: contain;
+    left: -15%;
+}
+#carouselExampleDark5 button {
+    background-color: #7c6a04;
+}
+#carouselExampleDark6 .carousel-item img {
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: contain;
+    left: -15%;
+}
+#carouselExampleDark6 button {
     background-color: #7c6a04;
 }
 

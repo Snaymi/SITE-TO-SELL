@@ -420,6 +420,8 @@ h1 p{
     font-size:large;
 }
 button {
+    font-size: 15px !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #261a00; /* Cor de fundo */
     color: white; /* Cor do texto */
     border: none; /* Remove a borda padrão */
