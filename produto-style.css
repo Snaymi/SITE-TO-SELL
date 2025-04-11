@@ -194,30 +194,15 @@ button {
     max-height: 250px; /* Define uma altura máxima */
     object-fit: contain; /* Garante que a imagem se ajuste ao contêiner sem distorção */
     margin: 0 auto; /* Centraliza a imagem */
-    padding: 30px; /* Adiciona um espaçamento interno */
+    padding: 45px; /* Adiciona um espaçamento interno */
 }
 .carousel-caption{
     height: 100%;
 }
 
 
-@keyframes slide {
-    0% {
-        background-position: 0% 10%;
-    }
-    25% {
-        background-position: 20% 50%;
-    }
-    50% {
-        background-position: 50% 100%;
-    }
-    75% {
-        background-position: 80% 90%;
-    }
-    100% {
-        background-position: 90% 100%;
-    }
-}
+
+
 h6 {
     position: absolute;
 
@@ -280,7 +265,7 @@ h7 p{
     padding: 10px;
     text-align: center;
     border: double 4px;
-    animation: blink 0.9s infinite; /* Aplica a animação */
+    animation: blink 3s infinite; /* Aplica a animação */
 }
 }
 a.wpp{
@@ -353,7 +338,7 @@ h7 p{
     padding: 10px;
     text-align: center;
     border: double 4px;
-    animation: blink 0.9s infinite; /* Aplica a animação */
+    animation: blink 2s infinite; /* Aplica a animação */
 }
 h5{
     position: absolute;
@@ -452,6 +437,15 @@ a{
     left: -15%;
 }
 #carouselExampleDark6 button {
+    background-color: #7c6a04;
+}
+#carouselExampleDark7 .carousel-item img {
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: contain;
+    left: -15%;
+}
+#carouselExampleDark7 button {
     background-color: #7c6a04;
 }
 
