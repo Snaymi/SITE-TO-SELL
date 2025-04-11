@@ -137,13 +137,7 @@ button {
     width: 50%;
     padding: 10px;
     box-sizing: border-box;
-    text-shadow:     0 0 5px #fff, 
-    0 0 10px #613c01, 
-    0 0 20px #e87510, 
-    0 0 30px #ff9500, 
-    0 0 40px #674c00, 
-    0 0 50px #f7ad00, 
-    0 0 60px #7d4901; /* Efeito neon */
+    
 
 }
 @media (max-width: 768px) {
@@ -195,21 +189,7 @@ button {
     position: relative; /* Garante que o fundo seja aplicado corretamente */
     overflow: hidden; /* Esconde o excesso do fundo */
     animation: slide 5s infinite linear alternate; /* Animação do fundo */
-    background: linear-gradient(
-        -60deg,
-        #fcfbfa ,
-        rgb(238, 229, 195) ,
-        rgb(239, 239, 239) ,
-        rgb(255, 224, 170) ,
-        rgb(239, 211, 118) ,
-        #916314,
-        #ffae00 ,
-        rgb(248, 230, 159) ,
-        rgb(204, 166, 108) ,
-        rgb(255, 190, 79) ,
-        rgb(123, 79, 4) ,
-        #916314 ); /* Gradiente diagonal */
-    background-size: 300% 300%; /* Garante que o gradiente ocupe mais espaço para o efeito */
+    background:  rgb(236, 221, 186); /* Cor de fundo padrão */
 }
 
 @keyframes slide {
@@ -305,7 +285,7 @@ h7 p{
 }
 }
 a.wpp{
-    font-size: 10px;
+    font-size: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: absolute;
     left: 65%;
@@ -387,10 +367,10 @@ h7 p{
 a{
     position: relative;
     z-index: 10; /* Eleva o link acima de outros elementos */
-    font-size: 15px;
+    font-size: 10px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-    left: 60%;
+    left: 62% !important;
     top: 80%;
     color:rgb(0, 0, 0);
     background-color: #1a3e03; /* Cor de fundo */
@@ -398,7 +378,7 @@ a{
     height: auto !important;
     border: double;
     text-align: center;
-    padding: 10px;
+    padding: 5px  5px!important;
     border-radius: 50px;
 }
 #carouselExampleDark .carousel-item img {
