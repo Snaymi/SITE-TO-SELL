@@ -282,6 +282,7 @@ a.wpp{
     padding: 1px;
     border-radius: 50px;
 }
+
 .logo-wpp{
     width: 30px;
     height: 30px;
@@ -329,6 +330,7 @@ h7{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+
 h7 p{
     
     color: #ffc400;
@@ -345,6 +347,7 @@ h5{
     top: 1% !important;;
     left: 25% !important;
 }
+
 
   
 .carousel-inner {
@@ -365,6 +368,7 @@ h5{
     top:0%;
     left: 65%;
 }
+
 a{
     position: relative;
     z-index: 10; /* Eleva o link acima de outros elementos */
