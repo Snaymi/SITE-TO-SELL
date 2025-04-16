@@ -463,6 +463,7 @@ button:hover {
 .fundo h2{
     color:#ffa45a;
     font-size: 40px;
+    font-family:'Times New Roman', Times, serif
 }
 .fundo p{
     text-align: center;
@@ -564,4 +565,8 @@ img{
     cursor: pointer;
     position:absolute;
     z-index: 10;
+}
+.fundo p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
 }
