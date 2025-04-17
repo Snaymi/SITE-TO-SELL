@@ -408,17 +408,15 @@ h1 p{
         width: auto; /* Aumenta a largura relativa */
     }
 }
-.fundo h2{
-    font-size: 20px;
-    color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
 .fundo h3{
     text-align: center;
     padding: 10px;
     color: white;
     font-size:large;
 }
+
+
 button {
     font-size: 15px !important;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -462,7 +460,7 @@ button:hover {
 }
 .fundo h2{
     color:#ffa45a;
-    font-size: 40px;
+    font-size: 20px;
     font-family:'Times New Roman', Times, serif
 }
 .fundo p{
