@@ -106,8 +106,16 @@ button {
     cursor: pointer; /* Mostra o cursor de "mãozinha" */
     transition: background-color 0.3s ease; /* Transição suave */
 }
+.carousel-control-prev{
+    left:1%;
+    
+
+}
+
 .carousel-control-prev,
 .carousel-control-next {
+    position: absolute;
+    
     z-index: 10; /* Eleva o link acima de outros elementos */
   padding: 20px; /* Expande a área clicável ao redor do botão */
   background-color: transparent; /* Garante que a área adicional seja invisível */
