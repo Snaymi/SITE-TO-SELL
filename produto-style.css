@@ -365,6 +365,27 @@ h5{
 
 }
 }
+.carousel-control-prev,
+.carousel-control-next {
+  min-width: 80px; /* Definir largura mínima */
+  min-height: 80px; /* Definir altura mínima */
+  padding: 15px; /* Adicionar padding extra */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 40px; /* Ajustar tamanho do ícone */
+  height: 40px; /* Ajustar altura do ícone */
+}
+
+.carousel-control-prev {
+  margin-left: -15px; /* Ajustar espaçamento */
+}
+
+.carousel-control-next {
+  margin-right: -15px; /* Ajustar espaçamento */
+}
+
 
 
 .logo-wpp{
