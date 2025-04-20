@@ -399,9 +399,14 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+
 }
+#carouselExampleDark button:hover{
+    z-index:15;
+}
+
 #carouselExampleDark button {
-    background-color: #ffaf4e;
+    background-color: #ffffff52;
 }
 #carouselExampleDark2 .carousel-item img {
     max-width: 320px;
@@ -409,7 +414,12 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+
 }
+#carouselExampleDark2 button:hover{
+    z-index:15;
+}
+
 #carouselExampleDark2 button {
     background-color: #ffaf4e;
 }
@@ -423,6 +433,9 @@ a{
 #carouselExampleDark3 button {
     background-color: #ffaf4e;
 }
+#carouselExampleDark3 button:hover{
+    z-index:15;
+}
 #carouselExampleDark4 .carousel-item img {
     max-width: 320px;
     max-height: 320px;
@@ -430,7 +443,12 @@ a{
     left: -15%;
     z-index: 2;
 
+
 }
+#carouselExampleDark4 button:hover{
+    z-index:15;
+}
+
 #carouselExampleDark4 button {
     background-color: #ffaf4e;
 }
@@ -440,7 +458,12 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+
 }
+#carouselExampleDark5 button:hover{
+    z-index:15;
+}
+
 #carouselExampleDark5 button {
     background-color: #ffaf4e;
 }
@@ -449,8 +472,11 @@ a{
     max-height: 320px;
     object-fit: contain;
     left: -15%;
-    z-index: 2;
 }
+#carouselExampleDark6 button:hover{
+    z-index:15;
+}
+
 #carouselExampleDark6 button {
     background-color: #ffaf4e;
 }
@@ -460,7 +486,12 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+
 }
+#carouselExampleDark7 button:hover{
+    z-index:15;
+}
+
 #carouselExampleDark7 button {
     background-color: #ffaf4e;
 }
@@ -470,7 +501,12 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+
 }    
+#carouselExampleDark8 button:hover{
+    z-index:15;
+}
+
 #carouselExampleDark8 button {
     background-color: #ffaf4e;
 }
@@ -480,7 +516,12 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+
 }
+#carouselExampleDark9 button:hover{
+    z-index:15;
+}
+
 #carouselExampleDark9 button {
     background-color: #ffaf4e;
 }
@@ -490,7 +531,12 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+
 }
+#carouselExampleDark10 button:hover{
+    z-index:15;
+}
+
 #carouselExampleDark10 button {
     background-color: #ffaf4e;
 }
@@ -500,8 +546,12 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
-    
+
 }
+#carouselExampleDark11 button:hover{
+    z-index:15;
+}
+
 #carouselExampleDark11 button {
     background-color: #ffaf4e;
 }
@@ -511,7 +561,12 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+
 }
+#carouselExampleDark12 button:hover{
+    z-index:15;
+}
+
 #carouselExampleDark12 button {
     background-color: #ffaf4e;
 }
@@ -521,7 +576,12 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+
 }
+#carouselExampleDark13 button:hover{
+    z-index:15;
+}
+
 #carouselExampleDark13 button {
     background-color: #ffaf4e;
 }
@@ -531,7 +591,12 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+
 }
+#carouselExampleDark14 button:hover{
+    z-index:15;
+}
+
 #carouselExampleDark14 button {
     background-color: #ffaf4e;
 }
@@ -541,7 +606,12 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+
 }
+#carouselExampleDark15 button:hover{
+    z-index:15;
+}
+
 #carouselExampleDark15 button {
     background-color: #ffaf4e;
 }
@@ -551,19 +621,30 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+
 }
+#carouselExampleDark16 button:hover{
+    z-index:15;
+}
+
 #carouselExampleDark16 button {
     background-color: #ffaf4e;
 }
+
 #carouselExampleDark17 .carousel-item img {
     max-width: 320px;
     max-height: 320px;
     object-fit: contain;
     left: -15%;
     z-index: 2;
+
 }
+#carouselExampleDark17 button:hover{
+    z-index:15;
+}
+
 #carouselExampleDark17 button {
-    background-color: #ffaf4e;
+    background-color: #d67e11;
 }
 
 
