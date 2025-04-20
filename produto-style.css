@@ -116,7 +116,6 @@ button {
 .carousel-control-next {
     position: absolute;
     
-    z-index: 10; /* Eleva o link acima de outros elementos */
   padding: 20px; /* Expande a área clicável ao redor do botão */
   background-color: transparent; /* Garante que a área adicional seja invisível */
 }
@@ -413,6 +412,8 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+    pointer-events: none;
+
 
 }
 #carouselExampleDark button:hover{
@@ -428,6 +429,8 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+    pointer-events: none;
+
 
 }
 #carouselExampleDark2 button:hover{
@@ -442,6 +445,8 @@ a{
     max-height: 320px;
     object-fit: contain;
     left: -15%;
+    pointer-events: none;
+
 }
 #carouselExampleDark3 button {
     background-color: #ffaf4e;
@@ -455,7 +460,7 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
-
+    pointer-events: none;
 
 }
 #carouselExampleDark4 button:hover{
@@ -471,6 +476,8 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+    pointer-events: none;
+
 
 }
 #carouselExampleDark5 button:hover{
@@ -485,6 +492,8 @@ a{
     max-height: 320px;
     object-fit: contain;
     left: -15%;
+    pointer-events: none;
+
 }
 #carouselExampleDark6 button:hover{
     z-index:15;
@@ -499,6 +508,8 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+    pointer-events: none;
+
 
 }
 #carouselExampleDark7 button:hover{
@@ -514,6 +525,8 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+    pointer-events: none;
+
 
 }    
 #carouselExampleDark8 button:hover{
@@ -529,6 +542,7 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+    pointer-events: none;
 
 }
 #carouselExampleDark9 button:hover{
@@ -544,6 +558,7 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+    pointer-events: none;
 
 }
 #carouselExampleDark10 button:hover{
@@ -559,6 +574,7 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+    pointer-events: none;
 
 }
 #carouselExampleDark11 button:hover{
@@ -574,6 +590,7 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+    pointer-events: none;
 
 }
 #carouselExampleDark12 button:hover{
@@ -589,6 +606,7 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+    pointer-events: none;
 
 }
 #carouselExampleDark13 button:hover{
@@ -604,6 +622,7 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+    pointer-events: none;
 
 }
 #carouselExampleDark14 button:hover{
@@ -619,6 +638,7 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+    pointer-events: none;
 
 }
 #carouselExampleDark15 button:hover{
@@ -634,6 +654,7 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+    pointer-events: none;
 
 }
 #carouselExampleDark16 button:hover{
@@ -650,6 +671,7 @@ a{
     object-fit: contain;
     left: -15%;
     z-index: 2;
+    pointer-events: none;
 
 }
 #carouselExampleDark17 button:hover{
