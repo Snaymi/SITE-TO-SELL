@@ -98,16 +98,21 @@ h7{
 }
 button {
     position:relative;
-    z-index: 1;
     background-color: #261a00; /* Cor de fundo */
     color: white; /* Cor do texto */
     border: none; /* Remove a borda padrão */
     border-radius: 5px; /* Bordas arredondadas */
-    padding: 10px 20px; /* Espaçamento interno */
     font-weight: bold; /* Texto em negrito */
     cursor: pointer; /* Mostra o cursor de "mãozinha" */
     transition: background-color 0.3s ease; /* Transição suave */
 }
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 10; /* Eleva o link acima de outros elementos */
+  padding: 20px; /* Expande a área clicável ao redor do botão */
+  background-color: transparent; /* Garante que a área adicional seja invisível */
+}
+
 
 
 
@@ -365,26 +370,6 @@ h5{
 
 }
 }
-.carousel-control-prev,
-.carousel-control-next {
-  min-width: 80px; /* Definir largura mínima */
-  min-height: 80px; /* Definir altura mínima */
-  padding: 15px; /* Adicionar padding extra */
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  width: 40px; /* Ajustar tamanho do ícone */
-  height: 40px; /* Ajustar altura do ícone */
-}
-
-.carousel-control-prev {
-  margin-left: -15px; /* Ajustar espaçamento */
-}
-
-.carousel-control-next {
-  margin-right: -15px; /* Ajustar espaçamento */
-}
 
 
 
@@ -427,7 +412,7 @@ a{
 }
 
 #carouselExampleDark button {
-    background-color: #ff8d01;
+    background-color: #ffaf4e;
 }
 #carouselExampleDark2 .carousel-item img {
     max-width: 320px;
