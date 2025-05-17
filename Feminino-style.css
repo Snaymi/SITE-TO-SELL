@@ -457,13 +457,14 @@ a{
     z-index:15;
 }
 #carouselExampleDark4 .carousel-item img {
-    max-width: 360px;
-    max-height: 360px;
+    max-width: 330px;
+    max-height: 330px;
     object-fit: contain;
     left: -15%;
     z-index: 2;
-    pointer-events: none;
-
+    top: 9px;
+    rotate: -40deg
+    
 }
 #carouselExampleDark4 button:hover{
     z-index:15;
@@ -471,15 +472,16 @@ a{
 
 #carouselExampleDark4 button {
     background-color: #ffaf4e;
+    z-index: 3;
 }
 #carouselExampleDark5 .carousel-item img {
-    max-width: 320px;
-    max-height: 320px;
+    max-width: 330px;
+    max-height: 330px;
     object-fit: contain;
     left: -15%;
     z-index: 2;
     pointer-events: none;
-
+    rotate: 40deg
 
 }
 #carouselExampleDark5 button:hover{
@@ -511,6 +513,7 @@ a{
     left: -15%;
     z-index: 2;
     pointer-events: none;
+    rotate: 40deg
 
 
 }
@@ -539,12 +542,13 @@ a{
     background-color: #ffaf4e;
 }
 #carouselExampleDark9 .carousel-item img {
-    max-width: 320px;
-    max-height: 320px;
+    max-width: 330px;
+    max-height: 330px;
     object-fit: contain;
     left: -15%;
     z-index: 2;
     pointer-events: none;
+    top: -9px;
 
 }
 #carouselExampleDark9 button:hover{
@@ -555,8 +559,8 @@ a{
     background-color: #ffaf4e;
 }
 #carouselExampleDark10 .carousel-item img {
-    max-width: 320px;
-    max-height: 320px;
+    max-width: 330px;
+    max-height: 330px;
     object-fit: contain;
     left: -15%;
     z-index: 2;
